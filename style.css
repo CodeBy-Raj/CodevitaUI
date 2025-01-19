@@ -6,6 +6,8 @@
 
 body {
     font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    overflow-x: hidden;
     
 }
 .section-top{
@@ -18,40 +20,38 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    position: absolute; /* Ensure it stays behind the header */
+    position: absolute; 
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
-    z-index: -1; /* Push the background behind everything else */
+    z-index: -1; 
     border-radius: 0 0 50% 50%;
 }
 
 
-/* Header Styling */
 header {
-    position: fixed; /* Make the header fixed at the top */
+    position: fixed; 
     top: 0;
     left: 0;
-    width: 100%; /* Ensure the header spans the full width */
+    width: 100%; 
     height: 80px;
-    background-color: rgba(208, 208, 208, 0.9); /* Slight transparency for better background visibility */
+    background-color: rgba(48, 48, 48, 0.491); 
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    z-index: 1000; /* Keep the header above the background */
+    z-index: 1000; 
 }
 
-/* Navigation Bar */
 .nav {
     width: 90%;
     display: flex;
-    justify-content: space-between; /* Spread logo and links apart */
+    justify-content: space-between; 
     align-items: center;
 }
 
-/* Logo Section */
+
 .logo {
     background-image: url(assests/logo.png);
     background-size: cover;
@@ -60,15 +60,14 @@ header {
     width: 200px;
 }
 
-/* Navigation Links */
 .nav-link {
     display: flex;
-    gap: 10px; /* Create spacing between links */
+    gap: 10px; 
 }
 
 .nav-link a {
     text-decoration: none;
-    color: #333;
+    color: #ffffff;
     font-weight: bold;
     padding: 5px 10px;
     transition: color 0.3s ease;
@@ -100,8 +99,6 @@ header {
     width: 290px;
     background-color: #ffff;
     padding: 30px ;
-    /* border: 2px solid black; */
-    /* border-radius: 9px; */
     box-shadow: rgba(0, 0, 0, 0.1) -10px -5px 40px 0px;
 }
 .box-content{
@@ -117,6 +114,85 @@ header {
 }
 .box-content p span{
     font-weight: 700;
+
+}
+/* ABOUT US ||||||||||||||||||||||||||||| */
+
+.section-about{
+    display: flex;
+    flex-direction: column;
+    height: 660px;
+    width: auto;
+    padding: 60px 0px;
+}
+.section-title{
+    display: flex;  
+    height: 40px;
+    justify-content: center;
+    /* width: 1290px; */
+    /* padding-bottom: 20px; */
+    /* margin-bottom: 20px; */
+}
+.section-title h2{
+    /* display: flex; */
+    font-size: 32px;
+    font-weight: 700;
+}
+.content-container{
+    display: flex;
+    height: 580px;
+    width: 1140px;
+    justify-content: space-between;
+    padding: 0px 12px; 
+     margin: 40px 40px;
+     gap: 20px;
+}
+
+.img{
+    height: 450px;
+    width: 500px;
+    padding: 0px 12px;
+    display: flex;
+    /* text-align: start; */
+   
+}
+.content{
+    display: flex;
+    height: 500px;
+    width: 560px;
+    padding: 0px 12px;
+    color: #444444;
+   
+}
+/* feature section |||||||||||||\\\\\\\\\ */
+
+.featured-container{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #444444;
+    /* height: 540px; */
+    /* width: 1256px; */
+    padding: 60px 0px;
+    color: #444444;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 420px;
+    width: 570px;
+    /* padding: 0px 12px; */
+    font-size: 16px;
+    color: #000000;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) -10px -5px 40px 0px;
+    border-radius: 9px;
+}
+.card:hover{
+    background-color: #20bdff;
+    transition: 0.8s ease-in-out;
+   
+    color: #ffff;
 
 }
 .spacer{
